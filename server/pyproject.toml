@@ -1,0 +1,13 @@
+[project]
+name = "TA7"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "mysql-connector-python",
+    "paho-mqtt>=2.1.0",
+    "websockets>=16.0",
+    "bcrypt",
+    "python-dotenv",
+]

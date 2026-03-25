@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thermal Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Thermal Dashboard</h1>
+    
+    <button onclick="logout()">Logout</button>
+    
+    <div>
+        <h3>Commands</h3>
+        <button onclick="sendCommand('get_one')">Get One</button>
+        <button onclick="sendCommand('start_continuous')">Start Continuous</button>
+        <button onclick="sendCommand('stop')">Stop</button>
+    </div>
+
+    <div>
+        <h3>Live Visualization</h3>
+        <p>thermistor: <span id="thermistor-val">--</span> °C</p>
+        <p>prediction: <span id="prediction-val">--</span></p>
+        <canvas id="heatmap" width="160" height="160"></canvas>
+    </div>
+
+    <div>
+        <h3>Database Data</h3>
+        <ul id="db-list"></ul>
+    </div>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js"></script>
+</body>
+</html>
